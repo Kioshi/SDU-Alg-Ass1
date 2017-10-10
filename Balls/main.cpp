@@ -21,6 +21,12 @@ void distribute(bins_t& bins, int nrBalls, bool powerOfTwo)
 
     for (int i = 0; i < nrBalls; i++)
     {
+        if (!powerOfTwo)
+        {
+            bins[distribution(generator)]++;
+            continue;
+        }
+
         int a = distribution(generator);
         int b = distribution(generator);
 
