@@ -1,0 +1,47 @@
+Bins & balls
+
+Experiments:
+
+Test nr 1. Using power of two: false
+Test sample: 1000
+Avg max number: 6.705
+Max number: 10
+==============================
+Test nr 1. Using power of two: true
+Test sample: 1000
+Avg max number: 3.056
+Max number: 4
+==============================
+Test nr 2. Using power of two: false
+Test sample: 1000
+Avg max number: 7.265
+Max number: 10
+==============================
+Test nr 2. Using power of two: true
+Test sample: 1000
+Avg max number: 3.182
+Max number: 4
+==============================
+Test nr 1. Using power of two: false
+Test sample: 100
+Avg max number: 6.59
+Max number: 9
+==============================
+Test nr 1. Using power of two: true
+Test sample: 100
+Avg max number: 3.05
+Max number: 4
+==============================
+Test nr 2. Using power of two: false
+Test sample: 100
+Avg max number: 7.32
+Max number: 10
+==============================
+Test nr 2. Using power of two: true
+Test sample: 100
+Avg max number: 3.22
+Max number: 4
+==============================
+
+Answers:
+1] From experiments its

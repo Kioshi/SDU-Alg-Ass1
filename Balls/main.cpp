@@ -8,7 +8,7 @@ typedef std::vector<int> bins_t;
 
 enum eData
 {
-    TEST_SAMPLE = 1000,
+    TEST_SAMPLE = 100,
     NR_TEST_1 = 10007,
     NR_TEST_2 = 32768,
 };
