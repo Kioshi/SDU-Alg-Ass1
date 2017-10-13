@@ -42,7 +42,7 @@ public:
     void countNodes() const;
     void countLeafs() const;
     void countFullNodes() const;
-    void internalPathLenght() const;
+    void internalPathLength() const;
 
 	void makeEmpty();
 	void insert(const int & x);

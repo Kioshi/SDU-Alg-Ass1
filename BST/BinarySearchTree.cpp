@@ -226,30 +226,26 @@ void BinarySearchTree::countLeafs() const
     std::cout << "Nr of leafs: " << _countLeafs(root) << std::endl;
 }
 
-void BinarySearchTree::internalPathLenght() const
+void BinarySearchTree::internalPathLength() const
 {
-    std::cout << "Internal path lenght: " << _internalPathLenght(root, 0) << std::endl;
+    std::cout << "Internal path length: " << _internalPathLenght(root, 0) << std::endl;
 }
 
-// O(N) - we have to go through every node, we could cache this number to get O(1) for few bytes of memory
 int BinarySearchTree::_countNodes(BinaryNode *node) const
 {
     return node ? 1 + _countNodes(node->left) + _countNodes(node->right) : 0;
 }
 
-// O(N) - we have to go through every node, we could cache this number to get O(1) for few bytes of memory
 int BinarySearchTree::_countFullNodes(BinaryNode *node) const
 {
     return node ? (node->left && node->right) + _countFullNodes(node->left) + _countFullNodes(node->right) : 0;
 }
 
-// O(N) - we have to go through every node, we could cache this number to get O(1) for few bytes of memory
 int BinarySearchTree::_countLeafs(BinaryNode* node) const
 {
     return node ? (!node->left && !node->right) + _countLeafs(node->left) + _countLeafs(node->right) : 0;
 }
 
-// O(N) - we have to go through every node, we could cache this number to get O(1) for few bytes of memory
 int BinarySearchTree::_internalPathLenght(BinaryNode* node, int floor) const
 {
     return node ? floor + _internalPathLenght(node->left, floor + 1) + _internalPathLenght(node->right, floor+1): 0;

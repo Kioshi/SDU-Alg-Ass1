@@ -5,6 +5,7 @@
 #include <mutex>
 
 typedef std::vector<int> bins_t;
+typedef std::unique_ptr<std::thread> thread_ptr;
 
 enum eData
 {
@@ -62,8 +63,6 @@ void test(std::mutex& mutex, int testNr, int binballs, bool powerOfTwo)
     std::cout << "==============================" << std::endl;
     
 }
-
-typedef std::unique_ptr<std::thread> thread_ptr;
 
 thread_ptr spawnTestWorker(void(&test)(std::mutex&, int, int, bool), int testNr, int binballs, bool powerOfTwo)
 {
